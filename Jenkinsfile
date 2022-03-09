@@ -8,7 +8,7 @@ pipeline {
   environment {
     APP_VER = "v1.0.${BUILD_ID}"
     // HARBOR_URL = ""
-    DEPLOY_GITREPO_USER = "your_name"    
+    DEPLOY_GITREPO_USER = "abhi15behera"    
     DEPLOY_GITREPO_URL = "github.com/${DEPLOY_GITREPO_USER}/spring-petclinic-helmchart.git"
     DEPLOY_GITREPO_BRANCH = "main"
     DEPLOY_GITREPO_TOKEN = credentials('my-github')
@@ -22,10 +22,10 @@ pipeline {
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: jenkins
+  namespace: default
 spec:
   # Use service account that can deploy to all namespaces
-  serviceAccountName: default
+  serviceAccountName: myjenkins
   containers:
   - name: maven
     image: maven:3.8.1-openjdk-16
