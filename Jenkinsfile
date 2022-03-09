@@ -56,9 +56,6 @@ spec:
         items:
         - key: additional-ca-cert-bundle.crt
           path: additional-ca-cert-bundle.crt
-    - name: docker-config
-      configMap:
-        name: docker-config
     - name: m2
       persistentVolumeClaim:
         claimName: m2
