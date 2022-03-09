@@ -45,8 +45,6 @@ spec:
     volumeMounts:
     - mountPath: "/root/.m2"
       name: m2      
-    - name: docker-config
-      mountPath: /kaniko/.docker
     - name: ca-cert
       mountPath: /kaniko/ssl/certs/
   volumes:
