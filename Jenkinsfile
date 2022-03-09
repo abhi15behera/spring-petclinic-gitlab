@@ -44,7 +44,9 @@ spec:
     - 99d    
     volumeMounts:
     - mountPath: "/root/.m2"
-      name: m2      
+      name: m2   
+    - name: docker-config
+      mountPath: /kaniko/.docker
     - name: ca-cert
       mountPath: /kaniko/ssl/certs/
   volumes:
@@ -54,6 +56,9 @@ spec:
         items:
         - key: additional-ca-cert-bundle.crt
           path: additional-ca-cert-bundle.crt
+    - name: docker-config
+      configMap:
+        name: docker-config
     - name: m2
       persistentVolumeClaim:
         claimName: m2
