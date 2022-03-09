@@ -22,7 +22,7 @@ pipeline {
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: jenkins-workers
+  namespace: jenkins
 spec:
   # Use service account that can deploy to all namespaces
   serviceAccountName: default
