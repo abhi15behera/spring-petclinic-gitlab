@@ -8,10 +8,10 @@ pipeline {
   environment {
     APP_VER = "v1.0.${BUILD_ID}"
     // HARBOR_URL = ""
-    DEPLOY_GITREPO_USER = "abhi15behera"    
-    DEPLOY_GITREPO_URL = "github.com/${DEPLOY_GITREPO_USER}/spring-petclinic-helmchart.git"
+    DEPLOY_GITREPO_USER = "root"    
+    DEPLOY_GITREPO_URL = "http://10.2.0.19/${DEPLOY_GITREPO_USER}/spring-petclinic-helmchart.git"
     DEPLOY_GITREPO_BRANCH = "main"
-    DEPLOY_GITREPO_TOKEN = credentials('my-github')
+    DEPLOY_GITREPO_TOKEN = credentials('my-gitlab')
   }    
   agent {
     kubernetes {
