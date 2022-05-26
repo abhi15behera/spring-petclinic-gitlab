@@ -98,7 +98,7 @@ spec:
             }
           } 
     }
-    stage('Containerize') {
+    stage('Containerize & Image Scan') {
       steps {
         container('kaniko') {
           sh "sed -i 's,harbor.example.com,${env.HARBOR_URL},g' Dockerfile"
