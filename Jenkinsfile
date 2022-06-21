@@ -128,7 +128,7 @@ spec:
             git config --global user.name $env.GIT_AUTHOR_NAME
             git config --global user.email $env.GIT_AUTHOR_EMAIL
             #git clone https://$env.DEPLOY_GITREPO_USER:$env.DEPLOY_GITREPO_TOKEN@$env.DEPLOY_GITREPO_URL --branch=$env.DEPLOY_GITREPO_BRANCH deploy
-            git clone http://10.2.0.19:cXndtUsxyfKzZCVq-fz1@10.2.0.19/root/spring-petclinic-helmchart.git --branch=main deploy
+            git clone http://10.2.0.19:sSmxesDNg8jzqbT9zxsR@10.2.0.19/root/spring-petclinic-helmchart.git --branch=main deploy
             # After cloning
             cd deploy
             # update values.yaml
@@ -137,7 +137,7 @@ spec:
             cat values.yaml
             git commit -am 'bump up version number'
             #git remote set-url origin https://$env.DEPLOY_GITREPO_USER:$env.DEPLOY_GITREPO_TOKEN@$env.DEPLOY_GITREPO_URL
-            git remote set-url origin http://10.2.0.19:cXndtUsxyfKzZCVq-fz1@10.2.0.19/root/spring-petclinic-helmchart.git
+            git remote set-url origin http://10.2.0.19:sSmxesDNg8jzqbT9zxsR@10.2.0.19/root/spring-petclinic-helmchart.git
             git push origin main
             git remote set-url origin http://10.2.0.19:5EWHXWU9mTRYUcGEsCsw@10.2.0.19/operation/spring-petclinic-helmchart.git
             git push origin main
