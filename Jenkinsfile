@@ -139,8 +139,8 @@ spec:
             #git remote set-url origin https://$env.DEPLOY_GITREPO_USER:$env.DEPLOY_GITREPO_TOKEN@$env.DEPLOY_GITREPO_URL
             git remote set-url origin http://10.2.0.19:oirR_cPAho3Fu3UvZ1UV@10.2.0.19/root/spring-petclinic-helmchart.git
             git push origin main
-            git remote set-url origin http://10.2.0.19:oirR_cPAho3Fu3UvZ1UV@10.2.0.19/operation/spring-petclinic-helmchart.git
-            git push origin main
+            #git remote set-url origin http://10.2.0.19:oirR_cPAho3Fu3UvZ1UV@10.2.0.19/operation/spring-petclinic-helmchart.git
+            #git push origin main
           """
         }
       }
